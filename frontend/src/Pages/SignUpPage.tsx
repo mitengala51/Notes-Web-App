@@ -56,7 +56,7 @@ export default function AuthPage() {
         <div className="w-full max-w-md lg:max-w-lg">
           {/* Logo */}
           <div className="flex items-center justify-center lg:justify-start mb-8 lg:mb-12">
-            <img src='/public/icon.svg' alt='logo' className='mr-3'/>
+            <img src='/icon.svg' alt='logo' className='mr-3'/>
             <span className="text-2xl font-bold text-gray-900">HD</span>
           </div>
 

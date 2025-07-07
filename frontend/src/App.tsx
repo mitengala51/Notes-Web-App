@@ -1,4 +1,5 @@
 import './App.css'
+import Dashboard from './Pages/DashBoard'
 import SignUpPage from './Pages/SignUpPage'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
   return (
     <>
       <SignUpPage />
+      <Dashboard />
     </>
   )
 }
