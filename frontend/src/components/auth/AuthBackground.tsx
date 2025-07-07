@@ -6,7 +6,7 @@ export const AuthBackground: React.FC = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
         {/* 3D Wave Effect */}
         <div className="absolute inset-0 opacity-90">
-          <img src='../../public/container.png' alt='container-img' />
+          <img src='/container.png' alt='container-img' />
         </div>
         
         {/* Additional 3D effect layers */}
