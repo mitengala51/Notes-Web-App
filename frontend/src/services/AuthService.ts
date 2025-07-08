@@ -1,4 +1,4 @@
-const API_BASE_URL = import.meta.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const API_BASE_URL = 'http://localhost:5000/api';
 
 export interface SignUpData {
   name: string;
@@ -22,13 +22,13 @@ export interface AuthResponse {
 }
 
 class AuthServiceClass {
-  private getAuthHeaders() {
-    const token = localStorage.getItem('token');
-    return {
-      'Content-Type': 'application/json',
-      ...(token && { Authorization: `Bearer ${token}` })
-    };
-  }
+  // private getAuthHeaders() {
+  //   const token = localStorage.getItem('token');
+  //   return {
+  //     'Content-Type': 'application/json',
+  //     ...(token && { Authorization: `Bearer ${token}` })
+  //   };
+  // }
 
   async requestOTP(email: string): Promise<void> {
     const response = await fetch(`${API_BASE_URL}/auth/request-otp`, {
