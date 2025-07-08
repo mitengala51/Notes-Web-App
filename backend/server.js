@@ -207,7 +207,7 @@ const otpLimiter = rateLimit({
 
 // CORS configuration
 app.use(cors({
-  origin: FRONTEND_URL,
+  origin: ['https://notes-web-app-9mbx.vercel.app/', 'http://localhost:5173'], // Allow frontend URLs
   credentials: true
 }));
 
