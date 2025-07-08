@@ -6,6 +6,7 @@ import { NotesSection } from '../components/dashboard/NotesSection';
 import { CreateNoteModal } from '../components/dashboard/CreateNoteModal';
 import { NoteService } from '../services/NoteService';
 import { AuthService } from '../services/AuthService';
+import { Link } from 'react-router';
 
 interface Note {
   id: string;
