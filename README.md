@@ -14,7 +14,7 @@ A full-stack notes application built with React, Node.js, MongoDB, and TypeScrip
 ## Tech Stack
 
 **Frontend:**
-- React 18 with TypeScript
+- React 19 with TypeScript
 - Vite for development and build
 - CSS3 for styling
 - Axios for API requests
@@ -92,7 +92,7 @@ frontend
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/mitengala51/Notes-Web-App.git
 cd notes-app
 ```
 
@@ -119,7 +119,6 @@ EMAIL_PASS="vdmo zese qyxp hpsy"
 EMAIL_SERVICE="gmail"
 ```
 
-**Note:** Replace the values with your actual MongoDB URI, JWT secret, and Gmail credentials.
 
 ### 3. Frontend Setup
 
