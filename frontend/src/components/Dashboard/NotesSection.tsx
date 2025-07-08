@@ -19,6 +19,7 @@ export const NotesSection: React.FC<NotesSectionProps> = ({
   onDeleteNote, 
   isMobile = false 
 }) => {
+  // console.log('Rendering NotesSection with notes:', notes);
   if (isMobile) {
     return (
       <div className="px-4 pb-6">
@@ -29,9 +30,9 @@ export const NotesSection: React.FC<NotesSectionProps> = ({
               <p>No notes yet. Create your first note!</p>
             </div>
           ) : (
-            notes.map((note) => (
+            notes.map((note, index) => (
               <NoteCard
-                key={note.id}
+                key={note.id || index}
                 note={note}
                 onDelete={onDeleteNote}
                 isMobile={true}

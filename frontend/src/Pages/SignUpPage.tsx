@@ -16,7 +16,7 @@ export default function AuthPage() {
     localStorage.setItem('user', JSON.stringify(user));
     
     // Redirect to dashboard
-    // window.location.href = '/dashboard';
+    window.location.href = '/dashboard';
   };
 
   return (

@@ -3,6 +3,7 @@ import { Calendar, Eye, EyeOff } from 'lucide-react';
 import { Input } from '../ui/Input';
 import { Button } from '../ui/Button';
 import { AuthService } from '../../services/AuthService';
+import "react-datepicker/dist/react-datepicker.css";
 
 interface AuthFormProps {
   isSignUp: boolean;
