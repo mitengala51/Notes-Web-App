@@ -206,10 +206,22 @@ const otpLimiter = rateLimit({
 });
 
 // CORS configuration
+const allowedOrigins = [
+  'https://notes-web-app-mu.vercel.app',
+  'http://localhost:5173'
+];
+
 app.use(cors({
-  origin: ['https://notes-web-app-9mbx.vercel.app', 'http://localhost:5173'], // Allow frontend URLs
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true
 }));
+
 
 app.use(express.json({ limit: '10mb' }));
 app.use(limiter);
