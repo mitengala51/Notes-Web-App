@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://notes-web-app-ol6z.onrender.com/api';
 
 export interface SignUpData {
   name: string;
