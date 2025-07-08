@@ -14,7 +14,7 @@ A full-stack notes application built with React, Node.js, MongoDB, and TypeScrip
 ## Tech Stack
 
 **Frontend:**
-- React 18 with TypeScript
+- React 19 with TypeScript
 - Vite for development and build
 - CSS3 for styling
 - Axios for API requests
