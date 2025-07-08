@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<SignUpPage />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="https://notes-web-app-mu.vercel.app/dashboard" element={<Dashboard />} />
         <Route path="*" element={<div>404 Not Found</div>} />
       </Routes>
     </BrowserRouter>
